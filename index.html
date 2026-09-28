@@ -3,18 +3,84 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clip Farm Automation</title>
+<title>Unsolved &amp; Declassified</title>
+<meta name="description" content="App homepage for the Unsolved &amp; Declassified YouTube publishing application.">
 <style>
-  body{background:#0b0f14;color:#e7edf3;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-       max-width:720px;margin:0 auto;padding:48px 20px;}
-  h1{font-size:1.7rem;margin:0 0 12px;}
-  p{font-size:0.97rem;line-height:1.65;max-width:65ch;margin:0 0 12px;}
-  a{color:#12e0c4;}
+:root{
+  --bg:#0f0e0d; --surface:#171614; --text:#f5f2ec; --muted:#b3aca0;
+  --accent:#e07a45; --border:#2c2a26; --line: rgba(224,122,69,.35);
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:'Inter', -apple-system, sans-serif;
+  padding-inline:20px; padding-block:56px;
+}
+.wrap{max-width:640px; margin:0 auto;}
+.eyebrow{font-size:12px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;}
+h1{
+  font-family:'Bebas Neue', 'Inter', sans-serif; font-weight:400; letter-spacing:.02em;
+  font-size:clamp(2.4rem, 8vw, 3.4rem); line-height:0.98; margin:0 0 18px; text-wrap:balance;
+}
+.lede{font-size:17px; line-height:1.65; color:var(--muted); margin:0 0 32px; max-width:52ch;}
+.rule{height:1px; background:var(--line); margin:32px 0;}
+.grid{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:32px;}
+@media (max-width:480px){.grid{grid-template-columns:1fr;}}
+.card{
+  background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:18px 20px;
+}
+.card .k{font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin-bottom:6px;}
+.card .v{font-size:15px; color:var(--text); line-height:1.5;}
+.links{display:flex; flex-wrap:wrap; gap:10px 20px; margin-bottom:8px;}
+a.link{color:var(--text); text-decoration:none; border-bottom:1px solid var(--line); padding-bottom:2px; font-size:15px;}
+a.link:hover{color:var(--accent); border-color:var(--accent);}
+footer{margin-top:40px; padding-top:20px; border-top:1px solid var(--border); font-size:13px; color:var(--muted);}
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Clip Farm Automation</h1>
-  <p>A personal content-automation tool that selects, edits, and publishes short video clips to its owner's own social media accounts (Instagram, TikTok, YouTube, X).</p>
-  <p><a href="/terms.html">Terms of Service</a> &middot; <a href="/privacy.html">Privacy Policy</a></p>
+<div class="wrap">
+  <p class="eyebrow">Redacted History Media</p>
+  <h1>Unsolved &amp; Declassified</h1>
+  <p class="lede">A YouTube channel telling true, researched stories from declassified documents,
+  cold cases, and public records &mdash; with AI-assisted narration, original host commentary, and
+  full disclosure on every upload. This page describes the internal application that publishes to it.</p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="k">Channel</div>
+      <div class="v">@UnsolvedDeclassified</div>
+    </div>
+    <div class="card">
+      <div class="k">Purpose of this app</div>
+      <div class="v">Publishes episodes to one channel we own</div>
+    </div>
+    <div class="card">
+      <div class="k">Who uses it</div>
+      <div class="v">Internal use only &mdash; not distributed</div>
+    </div>
+    <div class="card">
+      <div class="k">Content disclosure</div>
+      <div class="v">AI narration flagged on every video</div>
+    </div>
+    <div class="card">
+      <div class="k">Contact</div>
+      <div class="v">redactedyt01@gmail.com</div>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="links">
+    <a class="link" href="https://www.youtube.com/@UnsolvedDeclassified" target="_blank" rel="noopener">Watch the channel</a>
+    <a class="link" href="/privacy.html">Privacy Policy</a>
+    <a class="link" href="mailto:redactedyt01@gmail.com">Contact</a>
+  </div>
+
+  <footer>Redacted History Media &middot; Operator of the Unsolved &amp; Declassified YouTube channel</footer>
+</div>
 </body>
 </html>
+
