@@ -2,36 +2,111 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clip Farm Automation — Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Unsolved & Declassified YouTube publishing application.">
 <style>
-  body{background:#0b0f14;color:#e7edf3;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-       max-width:720px;margin:0 auto;padding:48px 20px;}
-  h1{font-size:1.7rem;margin:0 0 6px;}
-  .meta{color:#9aa8b6;font-size:0.9rem;margin-bottom:36px;}
-  h2{font-size:1.05rem;margin:32px 0 10px;padding-top:20px;border-top:1px solid #232b34;}
-  h2:first-of-type{border-top:none;padding-top:0;margin-top:0;}
-  p{font-size:0.97rem;line-height:1.65;max-width:65ch;margin:0 0 12px;}
-  a{color:#12e0c4;}
+:root{ padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+:root{
+  --bg:#faf8f5; --surface:#ffffff; --text:#1c1a17; --muted:#5c574e;
+  --accent:#c45a2a; --border:#e6e0d6; --mono:#3a352c;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111110; --surface:#171614; --text:#f5f2ec; --muted:#b3aca0;
+    --accent:#e07a45; --border:#2c2a26; --mono:#e5e0d6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111110; --surface:#171614; --text:#f5f2ec; --muted:#b3aca0;
+  --accent:#e07a45; --border:#2c2a26; --mono:#e5e0d6;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  padding-inline:20px; padding-block:48px;
+}
+.wrap{max-width:680px; margin:0 auto;}
+.eyebrow{
+  font-family: 'Inter', -apple-system, sans-serif; font-size:12px; font-weight:700;
+  letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:0 0 8px;
+}
+h1{font-size:2rem; line-height:1.15; margin:0 0 6px; text-wrap:balance;}
+.meta{font-family:'Inter',sans-serif; font-size:13px; color:var(--muted); margin:0 0 40px;}
+h2{
+  font-family:'Inter',sans-serif; font-size:14px; font-weight:700; letter-spacing:.04em;
+  text-transform:uppercase; color:var(--accent); margin:36px 0 10px; padding-top:20px;
+  border-top:1px solid var(--border);
+}
+h2:first-of-type{border-top:none; padding-top:0;}
+p{font-size:16px; line-height:1.65; color:var(--text); margin:0 0 14px;}
+ul{margin:0 0 14px; padding-left:22px;}
+li{font-size:16px; line-height:1.6; margin-bottom:6px;}
+.card{
+  background:var(--surface); border:1px solid var(--border); border-radius:10px;
+  padding:20px 22px; margin-top:8px;
+}
+a{color:var(--accent);}
+code{font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size:14px; color:var(--mono); background:var(--surface); padding:1px 6px; border-radius:4px; border:1px solid var(--border);}
+footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--border); font-family:'Inter',sans-serif; font-size:13px; color:var(--muted);}
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Clip Farm Automation — Privacy Policy</h1>
-  <div class="meta">Last updated September 2026</div>
+<div class="wrap">
+  <p class="eyebrow">Redacted History Media</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective September 28, 2026 &middot; Applies to the "Unsolved &amp; Declassified" YouTube publishing application</p>
 
-  <h2>Who this covers</h2>
-  <p>Clip Farm Automation is a personal content-automation tool operated by its owner, posting to the owner's own social media accounts only. This policy covers what data the tool touches while doing that.</p>
+  <h2>What this application is</h2>
+  <p>This is a single-purpose publishing tool operated by Redacted History Media. It automatically uploads
+  video episodes to one YouTube channel that we own and operate &mdash; <strong>Unsolved &amp; Declassified</strong>
+  (@UnsolvedDeclassified). It is not a public product, and it is not used by, or made available to, any
+  other person or organization.</p>
 
-  <h2>What is collected</h2>
-  <p>The tool reads publicly available stream/video content for editing and posting, and engagement data (views, comments, likes) on its own connected accounts, including via TikTok's Content Posting API. It does not collect personal data from viewers or commenters, does not track individuals across platforms, and does not sell or share any data with third parties.</p>
+  <h2>What data we access</h2>
+  <div class="card">
+    <p>Through the YouTube Data API, this application accesses only the data belonging to our own
+    channel, specifically to:</p>
+    <ul>
+      <li>Upload video files to the Unsolved &amp; Declassified channel</li>
+      <li>Set that video's own title, description, tags, category, and AI-content disclosure metadata</li>
+    </ul>
+    <p style="margin-bottom:0">It does not read, request, or store data belonging to any other YouTube
+    channel, viewer, or Google account.</p>
+  </div>
 
-  <h2>Comment replies</h2>
-  <p>The tool may auto-generate short replies to comments left on the owner's own posts. Only the comment text and the reply are processed for this purpose; no other data about the commenter is stored.</p>
+  <h2>What we don't do</h2>
+  <ul>
+    <li>We do not collect personal data from viewers, subscribers, or commenters.</li>
+    <li>We do not sell, rent, or share any data with third parties.</li>
+    <li>We do not use accessed data for advertising or for any purpose beyond publishing our own
+    channel's content.</li>
+    <li>We do not use this access for any human review of content outside of what is required to
+    operate or debug the application itself.</li>
+  </ul>
 
-  <h2>Storage</h2>
-  <p>Video files are stored temporarily in a private cloud bucket solely to make them fetchable by each platform's publishing API, and are deleted automatically after a short retention window.</p>
+  <h2>Data retention &amp; security</h2>
+  <p>OAuth credentials used by this application are stored securely and used solely to authenticate
+  uploads to our own channel. Access can be revoked at any time from the
+  <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account
+  security settings</a> of the channel's own Google account. Revoking access immediately stops all
+  further use.</p>
+
+  <h2>Compliance</h2>
+  <p>This application's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this policy can be directed to the account owner via the TikTok Developer Portal contact on file for this application.</p>
+  <p>Questions about this policy or this application can be sent to
+  <code>redactedyt01@gmail.com</code>.</p>
+
+  <footer>Redacted History Media &middot; Operator of the Unsolved &amp; Declassified YouTube channel</footer>
+</div>
 </body>
 </html>
